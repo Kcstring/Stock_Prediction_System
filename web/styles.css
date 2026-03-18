@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+input,
+button {
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px;
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+button {
+  cursor: pointer;
+  background: #2563eb;
+  border: 0;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.metric-item {
+  background: #0b1220;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.metric-item .label {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.metric-item .value {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card,
+.panel {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.card h2,
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.status-text {
+  margin: 10px 0 0;
+  color: #93c5fd;
+}
+
+.row-actions {
+  margin-bottom: 10px;
+}
+
+.db-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.db-table th,
+.db-table td {
+  border: 1px solid #334155;
+  padding: 8px;
+  text-align: left;
+}
+
+.db-table th {
+  background: #1f2937;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+#signalText {
+  font-size: 28px;
+  margin: 6px 0;
+}
+
+#indicatorList {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.chart {
+  height: 500px;
+}
+
+#newsList {
+  margin: 0;
+  padding-left: 16px;
+}
+
+#newsList li {
+  margin-bottom: 10px;
+}
+
+#newsList a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+#newsList a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
